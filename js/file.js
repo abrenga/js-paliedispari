@@ -89,7 +89,7 @@ function seleziona() {
 }
 
 
-/*Ascoltiamo l'evento che ci selezionerà uno dei due giochi */
+/*Ascoltiamo l'evento che ci selezionerà uno deii due giochi */
 id.addEventListener("change", (e) => {
     const inputUno = "cardEsercizioUno";
     const inputDue = "cardEsercizioDue";
