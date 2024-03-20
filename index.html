@@ -10,6 +10,7 @@
 
 <body>
     <div class="container">
+        <!--Prima row contiente il select per selezionare l'esercizio-->
         <div class="row">
             <div class="card text-center  mt-5 p-3">
                 <div class="card-body p-3">
@@ -17,15 +18,16 @@
                     </h5>
                     <select name="selectB" class="custom-select" id="inputGroupSelect01">
                         <option value="seleziona" class="option" selected>Scegli Eserzizio</option>
-                        <p class="card-text info p-3">
+
                     </select>
                 </div>
             </div>
         </div>
+        <!--Seconda row contiente il primo esercizio in origine con display none-->
         <div class="row mt-5 ">
             <div class="card text-center mt-5 ">
                 <div id="cardEsercizioUno" class="card-body d-none">
-                    <h5 id="" class="card-title">Inserisci un nome e verifica se è palindromo</h5>
+                    <h5 class="card-title">Inserisci un nome e verifica se è palindromo</h5>
                     <input id="inputNome" type="text">
                     <button id="btnPalindromo" class="btn btn-primary">Testa</button>
 
@@ -33,19 +35,20 @@
                 </div>
             </div>
         </div>
+        <!--Terza row contiente il secondo esercizio in origine con display none-->
+        <div class="row mt-5">
+            <div class="card text-center mt-5 ">
+                <div id="cardEsercizioDue" class="card-body d-none">
+                    <h5 class="card-title">Inserisci un numero e indovina poi se la somma con il numero random è pari
+                    </h5>
+                    <input id="num" type="text">
+                    <input id="result" type="text">
+                    <button id="btnSeHaiVinto" class="btn btn-primary">Testa</button>
 
-            <div class="row mt-5">
-                <div class="card text-center mt-5 ">
-                    <div id="cardEsercizioDue" class="card-body d-none">
-                        <h5 id="" class="card-title">Inserisci un numero e indovina poi se la somma con il numero random è pari</h5>
-                        <input id="num" type="text">
-                        <input id="result" type="text">
-                        <button id="btnSeHaiVinto" class="btn btn-primary">Testa</button>
-            
-                        <p id="paragrafod" class="card-text">Questo conterrà l'esito dell' esercizio.</p>
-                    </div>
+                    <p id="paragrafod" class="card-text">Questo conterrà l'esito dell' esercizio.</p>
                 </div>
             </div>
+        </div>
     </div>
 
     <script src="js/file.js"></script>
