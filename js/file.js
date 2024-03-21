@@ -15,14 +15,18 @@ let giochi = [
 
 /*Sezione gioco svolto gli esercizi */
 function palindromo(parametro) {
-    let reverse = parametro.split("").reverse().join("");
-    if (reverse == parametro) {
+    let reverse = "";
+    for (let i = parametro.length - 1; i >= 0; i--) {
+        reverse += parametro[i];
+    } if (reverse == parametro) {
         creaHTMLEsercise("è palindromo")
     } else {
         creaHTMLEsercise("non è palindromo")
     }
-
 }
+
+
+
 
 
 function pariODispari(numeroInserito, pariDisapriStr) {
