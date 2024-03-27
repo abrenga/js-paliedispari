@@ -23,17 +23,28 @@ function palindromo(parametro) {
      } else {
          creaHTMLEsercise("non è palindromo")
      }*/
-    let palindromoo = true;
-    for (let i = 0; i < parametro.length-1; i++) {
+
+    for (let i = 0; i < parametro.length/2; i++) {
 
         const ultimoIndice = parametro.length - 1 - i;
 
         if (parametro[i] !== parametro[ultimoIndice]) {
-            palindromoo = false;
-            break;
+            return false;
+           
         }
+       
     }
-    if (palindromoo==true) {
+    return true;
+   
+}
+
+
+
+function result(atringa) {
+
+    let epalindromo = palindromo(atringa);
+
+    if (epalindromo) {
         creaHTMLEsercise("è palindromo")
     } else {
         creaHTMLEsercise("non è palindromo")
@@ -143,7 +154,7 @@ function palindromo(parametro) {
 
     btnPalindromo.addEventListener("click", (e) => {
         let inputNome = document.getElementById("inputNome").value;
-        palindromo(inputNome)
+        result(inputNome)
             ;
 
     })
